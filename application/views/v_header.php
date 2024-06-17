@@ -10,7 +10,7 @@
   <div id="wrapper">
     <header>
       <hgroup>
-        <h1>RentalBuku.net</h1>
+        <h1 style="text-align:center">RentalBuku.net</h1>
         <h3>Membuat Template Sederhana dengan CodeIgniter</h3>
       </hgroup>
       <nav>
