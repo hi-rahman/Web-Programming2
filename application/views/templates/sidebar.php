@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('user'); ?>">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-book"></i>
         </div>
@@ -22,6 +22,11 @@
     <li class="nav-item active">
         
     <!-- Nav Item - Dashboard -->
+    <li class="nav-item">
+        <a class="nav-link pb-0" href="<?= base_url('buku/kategori'); ?>">
+        <i class="fa fa-fw fa book"></i>
+        <span>Kategori Buku</span></a>
+    </li>
     <li class="nav-item">
         <a class="nav-link pb-0" href="<?= base_url('buku'); ?>">
         <i class="fa fa-fw fa book"></i>

@@ -63,8 +63,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-ban"></i>Close</button>
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-ban"></i>Close</button>
+                    <button type="submit" class="btn btn-success"><i class="fas fa-plus-circle"></i> Tambah</button>
                 </div>
             </form>
         </div>
