@@ -2,8 +2,8 @@
 
 class Autentifikasi extends CI_Controller
 {
-    public function index()
-    {
+    public function index() {
+
         //jika statusnya sudah login, maka tidak bisa mengakses
         //halaman login alias dikembalikan ke tampilan user
         if($this->session->userdata('email')) { redirect('user'); }
@@ -34,8 +34,8 @@ class Autentifikasi extends CI_Controller
         } else { $this->_login(); }
     }
     
-    private function _login()
-    {
+    private function _login() { 
+
         $email = htmlspecialchars($this->input->post('email', true));
         $password = $this->input->post('password', true);
         $user = $this->ModelUser->cekData(['email' => $email])->row_array();
@@ -85,8 +85,8 @@ class Autentifikasi extends CI_Controller
     public function gagal() { $this->load->view('autentifikasi/gagal'); }
 
 
-    public function registrasi()
-    {
+    public function registrasi() {
+
         if ($this->session->userdata('email')) { redirect('user'); }
 
         //membuat rule untuk inputan nama agar tidak boleh kosong
@@ -160,7 +160,7 @@ class Autentifikasi extends CI_Controller
                 'image' => 'default.jpg',
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'role_id' => 2,
-                'is_active' => 1,
+                'is_active' => 0,
                 'tanggal_input' => time()
             ];
             $this->ModelUser->simpanData($data); //menggunakan model
@@ -170,10 +170,12 @@ class Autentifikasi extends CI_Controller
         }
     }
 
-    public function logout()
-    {
+    public function logout() {
+        
         $item = array('email','role_id');
         $this->session->unset_userdata($item);
+
+          $this->session->set_flashdata('pesan', '<div class="alert alert-warning alert-message" role="alert">Anda telah logout!</div>');
         redirect('autentifikasi');
     }
 }

@@ -9,7 +9,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-md font-weight-bold text-white text-uppercase mb-1">Jumlah Anggota</div>
-                            <div class="h1 mb-0 font-weight-bold text-white"><?= $this->ModelUser->getUserWhere(['role_id' => 1])->num_rows(); ?></div>
+                            <div class="h1 mb-0 font-weight-bold text-white"><?= $this->ModelUser->getUserWhere(['role_id' => 2])->num_rows(); ?></div>
                         </div>
                         <div class="col-auto">
                             <a href="<?= base_url('user/anggota'); ?>"><i class="fas fa-users fa-3x text-warning"></i></a>
@@ -18,6 +18,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Card Stok Buku Terdaftar -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2 bg-warning">
                 <div class="card-body">
@@ -37,10 +39,11 @@
                             <a href="<?= base_url('buku'); ?>"><i class="fas fa-book fa-3x text-primary"></i></a>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
+
+        <!-- Card : Buku Yang Dipinjam -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-success shadow h-100 py-2 bg-danger">
                 <div class="card-body">
@@ -62,6 +65,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Card: Buku yang Dibooking -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-warning shadow h-100 py-2 bg-success">
                 <div class="card-body">
@@ -86,6 +91,7 @@
         </div>
     </div>
     <!-- end row ux-->
+     
     <!-- Divider -->
     <hr class="sidebar-divider">
     <!-- row table-->

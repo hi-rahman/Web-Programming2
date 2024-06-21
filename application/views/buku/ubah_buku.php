@@ -108,7 +108,7 @@
                         <!-- Form Buttons -->
                         <div class="col-sm-12 mt-3 d-flex justify-content-end">
                             <button type="button" class="btn btn-secondary mr-2" onclick="window.history.back()">Kembali</button>
-                            <button type="submit" class="btn btn-primary">Update</button>
+                            <button type="submit" class="btn btn-success">Update</button>
                         </div>
 
                     </div>

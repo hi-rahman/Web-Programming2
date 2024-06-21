@@ -13,7 +13,7 @@
                             <div class="col-lg">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Halaman Login!!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Selamat datang, silahkan masuk!</h1>
                                     </div>
                                     <?= $this->session->flashdata('pesan'); ?>
                                     <form class="user" method="post" action="<?= base_url('autentifikasi'); ?>">
@@ -35,7 +35,7 @@
                                                     Me</label>
                                             </div>
                                         </div> -->
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        <button type="submit" class="btn btn-success btn-user btn-block">
                                             Masuk 
                                         </button>
                                         <!-- <a href="index.html" class="btn btn-primary btn-user btn-block">
