@@ -21,7 +21,7 @@
                     <div class="form-group row justify-content-left mt-2">
                         <div class="col-sm-10">
                             <button type="submit" class="btn btn-success">Ubah</button>
-                            <button class="btn btn-dark" onclick="window.history.go(-1)"> Kembali</button>
+                            <button type="button" class="btn btn-secondary mr-2" onclick="window.history.back()">Kembali</button>
                         </div>
                     </div>
                 </form>

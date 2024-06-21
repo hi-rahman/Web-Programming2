@@ -18,6 +18,7 @@
                         <th scope="col">Email</th>
                         <th scope="col">Role ID</th>
                         <th scope="col">Aktif</th>
+                        <th scope="col">Ubah/Hapus</th>
                         <!--<th scope="col">Pilihan</th>-->
                     </tr>
                 </thead>
